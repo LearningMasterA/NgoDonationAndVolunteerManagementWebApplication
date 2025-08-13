@@ -2,7 +2,14 @@ package com.spring.donation;
 
 import java.sql.Timestamp;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+@Entity
 public class Donor {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String name;
 	private String email;
@@ -19,16 +26,15 @@ public class Donor {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Donor(int id, String name, String email, String phone, String donation_type, String amount_of_items,
-			Timestamp donated_on) {
+	public Donor(String name, String email, String phone, String donation_type, String amount_of_items) {
 		super();
-		this.id = id;
+//		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
 		this.donation_type = donation_type;
 		this.amount_of_items = amount_of_items;
-		this.donated_on = donated_on;
+//		this.donated_on = donated_on;
 	}
 	public int getId() {
 		return id;
