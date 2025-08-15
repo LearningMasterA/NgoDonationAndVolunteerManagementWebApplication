@@ -1,57 +1,74 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>AddDonorServlet</servlet-name>
-  	<display-name>AddDonorServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.ngo.servlets.AddDonorServlet</servlet-class>
+    <description></description>
+    <display-name>AddDonorServlet</display-name>
+    <servlet-name>AddDonorServlet</servlet-name>
+    <servlet-class>com.ngo.servlets.AddDonorServlet</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>ViewDonorServlet</servlet-name>
-  	<display-name>ViewDonorServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.ngo.servlets.ViewDonorServlet</servlet-class>
+    <description></description>
+    <display-name>ViewDonorServlet</display-name>
+    <servlet-name>ViewDonorServlet</servlet-name>
+    <servlet-class>com.ngo.servlets.ViewDonorServlet</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>AddVolunteerServlet</servlet-name>
-  	<display-name>AddVolunteerServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.ngo.servlets.AddVolunteerServlet</servlet-class>
+    <description></description>
+    <display-name>AddVolunteerServlet</display-name>
+    <servlet-name>AddVolunteerServlet</servlet-name>
+    <servlet-class>com.ngo.servlets.AddVolunteerServlet</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>ViewVolunteerServlet</servlet-name>
-  	<display-name>ViewVolunteerServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.ngo.servlets.ViewVolunteerServlet</servlet-class>
+    <description></description>
+    <display-name>ViewVolunteerServlet</display-name>
+    <servlet-name>ViewVolunteerServlet</servlet-name>
+    <servlet-class>com.ngo.servlets.ViewVolunteerServlet</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>AssignTaskServlet</servlet-name>
-  	<display-name>AssignTaskServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.ngo.servlets.AssignTaskServlet</servlet-class>
+    <description></description>
+    <display-name>AssignTaskServlet</display-name>
+    <servlet-name>AssignTaskServlet</servlet-name>
+    <servlet-class>com.ngo.servlets.AssignTaskServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>AddDonorServlet</servlet-name>
-  	<url-pattern>/AddDonorServlet</url-pattern>
+    <servlet-name>AddDonorServlet</servlet-name>
+    <url-pattern>/AddDonorServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>ViewDonorServlet</servlet-name>
-  	<url-pattern>/ViewDonorServlet</url-pattern>
+    <servlet-name>ViewDonorServlet</servlet-name>
+    <url-pattern>/ViewDonorServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>AddVolunteerServlet</servlet-name>
-  	<url-pattern>/AddVolunteerServlet</url-pattern>
+    <servlet-name>AddVolunteerServlet</servlet-name>
+    <url-pattern>/AddVolunteerServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>ViewVolunteerServlet</servlet-name>
-  	<url-pattern>/ViewVolunteerServlet</url-pattern>
+    <servlet-name>ViewVolunteerServlet</servlet-name>
+    <url-pattern>/ViewVolunteerServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>AssignTaskServlet</servlet-name>
-  	<url-pattern>/AssignTaskServlet</url-pattern>
+    <servlet-name>AssignTaskServlet</servlet-name>
+    <url-pattern>/AssignTaskServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateDonor</display-name>
+    <servlet-name>UpdateDonor</servlet-name>
+    <servlet-class>com.ngo.servlets.UpdateDonor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateDonor</servlet-name>
+    <url-pattern>/UpdateDonor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteDonor</display-name>
+    <servlet-name>DeleteDonor</servlet-name>
+    <servlet-class>com.ngo.servlets.DeleteDonor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteDonor</servlet-name>
+    <url-pattern>/DeleteDonor</url-pattern>
   </servlet-mapping>
 </web-app>

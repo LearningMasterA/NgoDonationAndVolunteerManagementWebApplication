@@ -22,19 +22,21 @@ public class Volunteer {
 		return "Volunteer [vid=" + vid + ", name=" + name + ", email=" + email + ", phone=" + phone + ", skills="
 				+ skills + ", availability=" + availability + "]";
 	}
-	public Volunteer() {
+	
+	public Volunteer(String name, String email, String phone, String skills, String availability) {
 		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Volunteer(int vid, String name, String email, String phone, String skills, String availability) {
-		super();
-		this.vid = vid;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
 		this.skills = skills;
 		this.availability = availability;
 	}
+	
+	public Volunteer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getVid() {
 		return vid;
 	}
