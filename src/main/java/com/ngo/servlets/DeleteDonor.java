@@ -30,7 +30,6 @@ public class DeleteDonor extends HttpServlet {
 			Transaction tx= s.beginTransaction();
 			if(d!=null) {
 				s.remove(d);
-				
 			}
 			tx.commit();
 			s.close();
